@@ -188,3 +188,169 @@ nav {
     transform: translate(-20%, 30%);
   }
 }
+
+.page-2 {
+  padding: 8vw 0;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #efeae3;
+  position: relative;
+}
+
+.moving__text {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.moving__text::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  white-space: nowrap;
+  display: inline-block;
+  animation-name: move;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.moving__text h1 {
+  font-size: 9vw;
+  display: inline-block;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #fe320a;
+  display: inline-block;
+  margin: 1vw 2vw;
+}
+
+@keyframes move {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-100%);
+  }
+}
+
+.page__bottom-2 {
+  height: 80vh;
+  width: 100%;
+  padding: 4.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 9;
+}
+
+.page__bottom-2 h1 {
+  font-size: 4vw;
+  width: 60%;
+  line-height: 4vw;
+}
+
+.bottom__part-2 {
+  width: 20%;
+}
+
+.bottom__part-2 img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.bottom__part-2 p {
+  font-weight: 200;
+  margin-top: 2vw;
+  font-size: 1vw;
+}
+
+.page-2 .blob {
+  height: 32vw;
+  width: 32vw;
+  background: linear-gradient(to top right, #ff2d03, #ff5c0b);
+  border-radius: 50%;
+
+  position: absolute;
+  top: 58%;
+  left: 25%;
+  filter: blur(20px);
+  animation-name: blob;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes blob {
+  from {
+    filter: blur(20px);
+    transform: translate(10%, -10%) skew(0);
+  }
+  to {
+    filter: blur(30px);
+    transform: translate(10%, -10%) skew(-12deg);
+  }
+}
+
+.page-3 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #efeae3;
+  padding: 4vw 0;
+}
+
+.element {
+  position: relative;
+  height: 150px;
+  width: 100%;
+
+  border-bottom: 1px solid #38383864;
+
+  display: flex;
+  align-items: center;
+  padding: 0 2vw;
+  overflow: hidden;
+}
+
+.element h2 {
+  font-size: 3vw;
+  position: relative;
+  z-index: 9;
+}
+
+.element .overlay {
+  height: 100%;
+  width: 100%;
+  background-color: orange;
+  position: absolute;
+  left: 0;
+  top: -100%;
+  transition: all 0.3s;
+}
+
+.element:hover .overlay {
+  top: 0%;
+}
+
+.element__container {
+}
+
+#fixed__image {
+  height: 30vw;
+  width: 24vw;
+  border-radius: 15px;
+  position: fixed;
+  z-index: 99;
+  left: 50%;
+  top: 25%;
+  display: none;
+  background-size: cover;
+  background-position: center;
+  /* background-color: red; */
+}
