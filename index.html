@@ -9,10 +9,21 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="fixed__image"></div>
+    <div id="loader">
+      <h1>ENVIRONMENTS</h1>
+      <h1>EXPERIENCES</h1>
+      <h1>CONTENT</h1>
+    </div>
+
+    <div id="fixed-image"></div>
 
     <div id="main">
       <div class="page-1">
@@ -24,6 +35,7 @@
             <h4><a href="#">Studio</a></h4>
             <h4><a href="#"> Contact </a></h4>
           </div>
+          <h3>Menu</h3>
         </nav>
 
         <div class="center">
@@ -155,22 +167,49 @@
         </div>
       </div>
 
-      <div class="page-4"></div>
+      <div class="page-4">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-5"></div>
+
+      <div class="full__screen">
+        <div class="full-container"></div>
+      </div>
     </div>
 
+    <footer class="footer">
+      <div class="footer__nav"></div>
+      <div class="footer__logo-wraper">
+        <h3>Sundown</h3>
+      </div>
+      <div class="footer__link">
+        <div class="footer__socials">
+          <div class="">
+            <a href="#">linkedin</a>
+          </div>
+          <div class="">
+            <a href="#">linkedin</a>
+          </div>
+          <div class="">
+            <a href="#">linkedin</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./App.js"></script>
   </body>
 </html>
