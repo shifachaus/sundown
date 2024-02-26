@@ -34,6 +34,7 @@ function swiperAnimation() {
 // menu
 function menuAniation() {
   const menu = document.querySelector("nav h3");
+  const navLink = document.querySelectorAll(".menu h4 ");
   const fullScreen = document.querySelector(".full__screen");
   const navImage = document.querySelector("nav img");
 
@@ -42,10 +43,16 @@ function menuAniation() {
     if (flag === 0) {
       fullScreen.style.top = 0;
       navImage.style.opacity = 0;
+      navLink.forEach((nav) => {
+        nav.style.display = "block";
+      });
       flag = 1;
     } else {
       fullScreen.style.top = "-100%";
       navImage.style.opacity = 1;
+      navLink.forEach((nav) => {
+        nav.style.display = "none";
+      });
       flag = 0;
     }
   });
